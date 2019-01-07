@@ -3,13 +3,23 @@ body {
     background-image: url("pozadina.jpg");
 }
 #forma{
-    position: relative;
-    top: 100px;
-    left: 15%;
-    height: 60%;
-    width: 85%;
+    width:80%;
+    margin:30px auto;
+    text-align:center;
     color:white;
+    border-radius:20px;
   }
+  #forma a{
+      color:white;
+      text-decoration:none;
+  }
+form{
+    width:100%;
+    margin:30px auto;
+    border-radius:5px;
+    padding:10px;
+    border: 1px solid;
+}
 #forma label {
     display: inline-block;
     width: 10%;
@@ -17,3 +27,46 @@ body {
     font-size: 18px;
     color: white;
   }
+.input{
+    width:50%;
+    height:10px;
+    padding:10px;
+    border: 2px solid;
+}
+.botun{
+    height:40px;
+    border: 2px solid;
+    border-radius:5px;
+    padding: 5px 20px;
+}
+.task{
+    text-align: left;
+}
+.delete{
+    text-align: center;
+}
+.delete a{
+   color:white;
+   padding:1px 6px;
+   border-radius:3px;
+   text-decoration:none;
+}
+table{
+    width:50%;
+    margin: 30px auto;
+    border-collapse: collapse;
+}
+tr{
+    border-bottom: 1px solid;
+}
+th{
+    font-size: 19px;
+}
+th,td{
+    border:none;
+    height:30px;
+    padding:2px;
+}
+tr:hover{
+    background:lightsteelblue;
+}
