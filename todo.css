@@ -1,0 +1,19 @@
+body {
+    background-size:100%;
+    background-image: url("pozadina.jpg");
+}
+#forma{
+    position: relative;
+    top: 100px;
+    left: 15%;
+    height: 60%;
+    width: 85%;
+    color:white;
+  }
+#forma label {
+    display: inline-block;
+    width: 10%;
+    text-align: left;
+    font-size: 18px;
+    color: white;
+  }

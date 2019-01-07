@@ -35,7 +35,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <!DOCTYPE html>
 <html>
+<link rel="stylesheet" type="text/css" href="todo.css">
 <body>
+<div id="forma">
 <?php if ($poruka != "") echo $poruka . "<br><br>"?>
 <form action="" method="post">
   <label for="ime">Ime:</label>
@@ -44,7 +46,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   <label for="prezime">Prezime:</label>
   <input type="text" name="prezime" id="prezime" >
   <br>
-  <label for="kime">Korisničko ime: :</label>
+  <label for="kime">Korisničko ime:</label>
   <input type="text" name="kime" id="kime">
   <br>
   <label for="email">E-mail:</label> 
@@ -58,7 +60,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   <br><br>
   <input type="submit" value="Registriraj">
   <br><br>
-
 </form> 
+</div>
 </body>
 </html>
