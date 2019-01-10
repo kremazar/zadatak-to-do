@@ -27,6 +27,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 ?>
 <!DOCTYPE html>
 <html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" type="text/css" href="todo.css">
 <body>
 <div id="forma">
@@ -40,6 +41,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   <br>
   <input type="submit" value="Prijava">
   <br><br>
+  <p>user:ppero lozinka:12345</p>
+  <p>user:juro lozinka:12345</p>
+  <p>user:pperica lozinka:12345</p>
 </form> 
 </div>
 </body>

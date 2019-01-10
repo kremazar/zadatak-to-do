@@ -22,6 +22,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($password1 != $password2){
 	    $poruka= "Nije ista lozinka";
     }
+    if($ime == "" || $prezime == "" || $kime == "" || $email == "" || $lozinka == "" || $ponlozinku == ""  ){
+		$poruka = "Popuni sve praznine";
+    }
     if(empty($poruka)){
 
         $upit2 = "INSERT INTO user (ID,ime, prezime, user,email, lozinka) VALUES (DEFAULT,'$ime', '$prezime','$kime', '$email', '$lozinka');";
@@ -32,10 +35,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
    
 }
 ?>
-
-
 <!DOCTYPE html>
 <html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" type="text/css" href="todo.css">
 <body>
 <div id="forma">
@@ -51,7 +53,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   <input type="text" name="kime" id="kime">
   <br>
   <label for="email">E-mail:</label> 
-  <input type="text" name="email" id="email">
+  <input type="email" name="email" id="email">
   <br>
   <label for="lozinka">Lozinka:</label>
   <input type="text" name="lozinka" id="lozinka" >

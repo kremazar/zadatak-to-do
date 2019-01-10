@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 07, 2019 at 11:24 PM
+-- Generation Time: Jan 10, 2019 at 03:26 AM
 -- Server version: 10.1.37-MariaDB
 -- PHP Version: 7.2.12
 
@@ -38,7 +38,20 @@ CREATE TABLE `task` (
 -- Dumping data for table `task`
 --
 
-
+INSERT INTO `task` (`ID`, `task`, `ID_user`) VALUES
+(48, 'Oprati suđe', 7),
+(49, 'Napraviti sarmu', 7),
+(51, 'Oprati noge', 7),
+(52, 'Oprati zube', 1),
+(53, 'Otići na misu', 1),
+(54, 'Oguliti krompir', 1),
+(55, 'Pojesti 2 tortice kokos', 1),
+(56, 'Odraditi 2 serije sklekova', 2),
+(57, 'Nahraniti psa', 2),
+(58, 'Napravit ručak', 2),
+(59, 'Zadovoljiti susjedu', 2),
+(60, 'Pogledati 2 sezonu Novina', 2),
+(61, 'Napit se jer ovaj graf radi', 2);
 
 -- --------------------------------------------------------
 
@@ -59,7 +72,10 @@ CREATE TABLE `user` (
 -- Dumping data for table `user`
 --
 
-
+INSERT INTO `user` (`ID`, `ime`, `prezime`, `user`, `email`, `lozinka`) VALUES
+(1, 'pero', 'kanizaj', 'ppero', 'pero@net.hr', '12345'),
+(2, 'jurica', 'juric', 'juro', 'juro@net.hr', '12345'),
+(7, 'Petar', 'Preradovi?', 'pperica', 'pperica@net.hr', '12345');
 
 --
 -- Indexes for dumped tables
@@ -86,13 +102,13 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `task`
 --
 ALTER TABLE `task`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=47;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=64;
 
 --
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- Constraints for dumped tables
